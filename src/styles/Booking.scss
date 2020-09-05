@@ -1,0 +1,120 @@
+@import "./color_theme.scss";
+@import "./screenSize";
+.booking-page {
+  .header {
+    background-image: url("../images/booking/hero-bg-desktop@2x.jpg");
+    @include screen(med) {
+      background-image: url("../images/booking/hero-bg-tablet@2x.jpg");
+      padding: 56px 39px 270px;
+      .logo {
+        text-align: left;
+      }
+    }
+    @include screen(small) {
+      background-image: url("../images/booking/hero-bg-mobile@2x.jpg");
+      padding: 56px 24px 228px;
+      .logo {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.booking {
+  height: 320px;
+  position: relative;
+  @include screen(med) {
+    height: 435px;
+  }
+  @include screen(small) {
+    height: 534px;
+  }
+  .button {
+    justify-self: center;
+  }
+  .booking__lines {
+    position: absolute;
+    left: 45%;
+    top: 166px;
+    @include screen(med) {
+      display: none;
+    }
+  }
+}
+.booking__form {
+  padding: 47px 48px;
+  background-color: white;
+  box-shadow: 0 75px 100px rgba($color: #384255, $alpha: 0.5);
+  position: absolute;
+  right: 165px;
+  top: -398px;
+  display: grid;
+  grid-template-rows: auto;
+  gap: 31px;
+  @include screen(custom, 1300) {
+    top: -183px;
+  }
+  @include screen(med) {
+    top: -230px;
+    right: 114px;
+    left: 114px;
+  }
+  @include screen(small) {
+    padding: 32px;
+    top: -137px;
+    right: 24px;
+    left: 24px;
+  }
+  .form__time-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .time-date__label {
+      margin-right: 53px;
+    }
+    @include screen(small) {
+      flex-direction: column;
+      align-items: flex-start;
+      .time-date__label {
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .MuiGrid-spacing-xs-1 {
+    justify-content: space-between;
+  }
+  .MuiInputBase-input,
+  .MuiInputBase-input::placeholder {
+    font-family: "Spartan", sans-serif;
+  }
+
+  button {
+    cursor: pointer;
+    padding: 24px 48px;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2rem;
+    background-color: $Cod-Gray;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    justify-self: center;
+    transition: background-color 350ms;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $Cod-Gray;
+      color: $Cod-Gray;
+    }
+  }
+  .nbr-people {
+    .MuiInputBase-input {
+      text-align: center;
+    }
+  }
+}

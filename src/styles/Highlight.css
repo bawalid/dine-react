@@ -1,0 +1,76 @@
+.highlight-section {
+  background-color: #111111;
+  width: 100%;
+  padding: 200px 165px 120px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  gap: 125px;
+  color: white;
+}
+
+.highlight-section .highlight-section__content {
+  color: white;
+  max-width: 445px;
+}
+
+@media screen and (max-width: 768px) {
+  .highlight-section .highlight-section__content {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 64px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .highlight-section .highlight-section__content {
+    padding: 0;
+  }
+}
+
+.highlight-section .highlight-section__content h2 {
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 489px) {
+  .highlight-section .highlight-section__content h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .highlight-section .highlight-section__content p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+.highlight-section .highligh-section__menu {
+  max-width: 540px;
+}
+
+.highlight-section hr {
+  margin: 24px auto;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+@media screen and (max-width: 768px) {
+  .highlight-section {
+    padding: 96px 97px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 56px;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .highlight-section {
+    padding: 72px 24px;
+  }
+}
+/*# sourceMappingURL=Highlight.css.map */

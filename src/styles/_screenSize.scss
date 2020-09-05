@@ -1,0 +1,29 @@
+$breakpoint-small: 489px;
+$breakpoint-med: 768px;
+$breakpoint-large: 1440px;
+
+@mixin screen($size, $pixels: $breakpoint-small) {
+  @if $size == "small" {
+    @media screen and (max-width: $breakpoint-small) {
+      @content;
+    }
+  } @else if $size == "med" {
+    @media screen and (max-width: $breakpoint-med) {
+      @content;
+    }
+  } @else if $size == "large" {
+    @media screen and (max-width: $breakpoint-large) {
+      @content;
+    }
+  } @else if $size == "extra-large" {
+    @media screen and (min-width: $breakpoint-large) {
+      @content;
+    }
+  } @else if $size == "custom" {
+    @media screen and (max-width: $pixels + px) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}

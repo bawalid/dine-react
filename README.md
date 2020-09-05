@@ -1,8 +1,42 @@
+# Frontend Mentor - Dine Website Challenge
+
+![Design preview for the Dine Website Challenge coding challenge](./preview.jpg)
+
+## Welcome! 👋
+
+Thanks for purchasing this premium Frontend Mentor coding challenge.
+
+[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow. These premium challenges are perfect portfolio pieces, so please do feel free to use what you build in your portfolio to show others.
+
+**To do this challenge, you need a solid understanding of HTML and CSS and a basic understanding of JavaScript.**
+
+## The challenge
+
+Your challenge is to build out this multi-page website and get it looking as close to the design as possible.
+
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+
+Your users should be able to:
+
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements throughout the site
+- See the correct content for the Family Gatherings, Special Events, and Social Events section when the user clicks each tab
+- Receive an error message when the booking form is submitted if:
+  - The `Name` or `Email Address` fields are empty should show "This field is required"
+  - The `Email Address` is not formatted correctly should show "Please use a valid email address"
+  - Any of the `Pick a date` or `Pick a time` fields are empty should show "This field is incomplete"
+
+Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+
+## ---------------------------------------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
 
 ### `npm start`
 

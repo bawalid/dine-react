@@ -1,0 +1,42 @@
+.button {
+  padding: 24px 48px;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2rem;
+}
+
+.button.light {
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  -webkit-transition: background-color 350ms;
+  transition: background-color 350ms;
+}
+
+.button.light:hover {
+  background-color: white;
+  color: #17192b;
+}
+
+.button.dark {
+  background-color: #111111;
+  color: white;
+  text-transform: uppercase;
+  -webkit-transition: background-color 350ms;
+  transition: background-color 350ms;
+}
+
+.button.dark:hover {
+  background-color: transparent;
+  border: 1px solid #111111;
+  color: #111111;
+}
+/*# sourceMappingURL=Button.css.map */

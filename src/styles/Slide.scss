@@ -1,0 +1,121 @@
+@import "./color_theme.scss";
+@import "./screenSize";
+
+.slide {
+  position: relative;
+  padding: 160px 165px;
+  @include screen(med) {
+    padding: 120px 40px;
+  }
+  @include screen(small) {
+    padding: 80px 24px 124px;
+  }
+}
+.slide__container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  @include screen(med) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .slide__image {
+    width: 100%;
+    min-width: 340px;
+    box-shadow: 0 75px 100px rgba($color: #384255, $alpha: 0.5);
+    @include screen(med) {
+      max-width: 573px;
+    }
+    @include screen(med) {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+  .slide__content {
+    padding-left: 125px;
+    max-width: 445px;
+    display: grid;
+    grid-template-areas: "texts" "button" "nav";
+    a {
+      grid-area: button;
+    }
+    @include screen(med) {
+      display: inline;
+      width: 100%;
+      max-width: 100%;
+      padding-left: 0;
+      text-align: center;
+      a {
+        margin: 0 auto;
+      }
+    }
+  }
+  .slide__text {
+    margin: 16px 0 32px;
+  }
+  .slide__text-container {
+    grid-area: texts;
+    @include screen(med) {
+      padding: 0 116px;
+    }
+    @include screen(small) {
+      padding: 0;
+    }
+  }
+}
+
+.slide__leftBack {
+  position: absolute;
+  top: 0;
+  left: -165px;
+  @include screen(small) {
+    display: none;
+  }
+}
+
+.slide__lines {
+  position: absolute;
+  top: 122px;
+  left: 125px;
+  @include screen(med) {
+    left: 39px;
+    top: 82px;
+  }
+  @include screen(small) {
+    display: none;
+  }
+}
+
+.navigation-links {
+  margin-top: 77px;
+  @include screen(med) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+    margin-bottom: 40px;
+  }
+  @include screen(small) {
+    display: block;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    p {
+      letter-spacing: 0.4rem;
+      margin-bottom: 29px;
+    }
+  }
+}
+
+.navigation-links > p {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba($color: #4c4c4c, $alpha: 0.5);
+  cursor: pointer;
+  transition: 350ms color;
+}
+
+.navigation-links > p:hover,
+.slide-nav-item.active {
+  color: #4c4c4c;
+}

@@ -1,0 +1,44 @@
+@import "./color_theme.scss";
+@import "./screenSize";
+
+.menu-highlight {
+  display: flex;
+
+  .menu-highlight__img {
+    display: flex;
+    margin-right: 30px;
+    img {
+      width: 128px;
+      object-fit: contain;
+      object-position: top;
+    }
+    @include screen(small) {
+      margin: 0;
+      margin-bottom: 32px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  @include screen(small) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.menu-highlight__line {
+  content: "";
+  height: 1px;
+  width: 32px;
+  background-color: $Beaver;
+  margin-top: 17px;
+  @include screen(small) {
+    display: none;
+  }
+}

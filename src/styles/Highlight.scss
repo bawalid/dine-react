@@ -1,0 +1,55 @@
+@import "./color_theme.scss";
+@import "./screenSize";
+
+.highlight-section {
+  background-color: $Cod-Gray;
+  width: 100%;
+  padding: 200px 165px 120px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 125px;
+  color: white;
+  .highlight-section__content {
+    color: white;
+    max-width: 445px;
+    @include screen(med) {
+      max-width: 100%;
+      width: 100%;
+      padding: 0 64px;
+      text-align: center;
+    }
+    @include screen(small) {
+      padding: 0;
+    }
+    h2 {
+      margin-top: 48px;
+      margin-bottom: 16px;
+      @include screen(small) {
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 32px;
+      }
+    }
+    p {
+      @include screen(small) {
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+  }
+  .highligh-section__menu {
+    max-width: 540px;
+  }
+  hr {
+    margin: 24px auto;
+    border-color: rgba($color: #fff, $alpha: 0.15);
+  }
+  @include screen(med) {
+    padding: 96px 97px;
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+  @include screen(small) {
+    padding: 72px 24px;
+  }
+}

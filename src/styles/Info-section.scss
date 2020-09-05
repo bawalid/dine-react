@@ -1,0 +1,137 @@
+@import "./screenSize";
+
+.info-section {
+  padding: 0 167px;
+  @include screen(med) {
+    padding: 0 97px 120px;
+  }
+  @include screen(small) {
+    padding: 0 24px 80px;
+  }
+}
+
+.info__section {
+  display: grid;
+  gap: 125px;
+  align-items: center;
+  position: relative;
+  @include screen(med) {
+    gap: 56px;
+    justify-items: center;
+  }
+  @include screen(small) {
+    gap: 48px;
+  }
+  .picture-container {
+    max-width: 540px;
+    min-width: 373px;
+    @include screen(small) {
+      max-width: 327px;
+      min-width: 100%;
+    }
+  }
+  .section-left,
+  .section-right {
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 0 75px 100px rgba($color: #384255, $alpha: 0.5);
+    grid-area: image;
+    width: 100%;
+  }
+  .section-left {
+    margin-top: -70px;
+  }
+  .section-right {
+    margin-bottom: -70px;
+    @include screen(med) {
+      margin: 0;
+    }
+  }
+  .info-section__content {
+    h2 {
+      margin-top: 48px;
+      margin-bottom: 16px;
+      @include screen(med) {
+        margin-top: 40px;
+        line-height: 56px;
+      }
+      @include screen(small) {
+        font-size: 32px;
+      }
+    }
+    p {
+      @include screen(small) {
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+    @include screen(med) {
+      text-align: center;
+    }
+  }
+}
+.info__section.left {
+  grid-template-areas: "image text";
+  @include screen(med) {
+    grid-template-areas: "image" "text";
+  }
+}
+
+.info__section.right {
+  grid-template-areas: "text image";
+  @include screen(med) {
+    grid-template-areas: "image" "text";
+  }
+}
+
+.info-section__content {
+  grid-area: text;
+}
+
+.info__section:nth-child(1) {
+  margin-bottom: 121px;
+  @include screen(small) {
+    margin-bottom: 80px;
+  }
+}
+
+.info-section__lines {
+  position: absolute;
+  right: -114px;
+  z-index: 2;
+  @include screen(med) {
+    right: -58px;
+    top: 33.8%;
+  }
+  @include screen(small) {
+    display: none;
+  }
+}
+
+.leftBack {
+  position: absolute;
+  left: -165px;
+  bottom: 80px;
+  max-width: 895px;
+  z-index: -1;
+  @include screen(med) {
+    left: -700px;
+  }
+  @include screen(small) {
+    display: none;
+  }
+}
+.rightBack {
+  position: absolute;
+  right: -165px;
+  bottom: 0;
+  max-width: 895px;
+  z-index: -1;
+  @include screen(med) {
+    right: -700px;
+  }
+  @include screen(small) {
+    display: none;
+  }
+}

@@ -1,0 +1,36 @@
+@import "./color_theme.scss";
+@import "./screenSize";
+
+.button {
+  padding: 24px 48px;
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2rem;
+}
+
+.button.light {
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  transition: background-color 350ms;
+}
+.button.light:hover {
+  background-color: white;
+  color: $Mirage;
+}
+
+.button.dark {
+  background-color: $Cod-Gray;
+  color: white;
+  text-transform: uppercase;
+  transition: background-color 350ms;
+}
+.button.dark:hover {
+  background-color: transparent;
+  border: 1px solid $Cod-Gray;
+  color: $Cod-Gray;
+}

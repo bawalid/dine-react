@@ -1,0 +1,188 @@
+.booking-page .header {
+  background-image: url("../images/booking/hero-bg-desktop@2x.jpg");
+}
+
+@media screen and (max-width: 768px) {
+  .booking-page .header {
+    background-image: url("../images/booking/hero-bg-tablet@2x.jpg");
+    padding: 56px 39px 270px;
+  }
+  .booking-page .header .logo {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .booking-page .header {
+    background-image: url("../images/booking/hero-bg-mobile@2x.jpg");
+    padding: 56px 24px 228px;
+  }
+  .booking-page .header .logo {
+    text-align: center;
+  }
+}
+
+.booking {
+  height: 320px;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .booking {
+    height: 435px;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .booking {
+    height: 534px;
+  }
+}
+
+.booking .button {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.booking .booking__lines {
+  position: absolute;
+  left: 45%;
+  top: 166px;
+}
+
+@media screen and (max-width: 768px) {
+  .booking .booking__lines {
+    display: none;
+  }
+}
+
+.booking__form {
+  padding: 47px 48px;
+  background-color: white;
+  -webkit-box-shadow: 0 75px 100px rgba(56, 66, 85, 0.5);
+          box-shadow: 0 75px 100px rgba(56, 66, 85, 0.5);
+  position: absolute;
+  right: 165px;
+  top: -398px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 31px;
+}
+
+@media screen and (max-width: 1300px) {
+  .booking__form {
+    top: -183px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .booking__form {
+    top: -230px;
+    right: 114px;
+    left: 114px;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .booking__form {
+    padding: 32px;
+    top: -137px;
+    right: 24px;
+    left: 24px;
+  }
+}
+
+.booking__form .form__time-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking__form .form__time-date .time-date__label {
+  margin-right: 53px;
+}
+
+@media screen and (max-width: 489px) {
+  .booking__form .form__time-date {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .booking__form .form__time-date .time-date__label {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
+
+.booking__form .MuiGrid-spacing-xs-1 {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.booking__form .MuiInputBase-input,
+.booking__form .MuiInputBase-input::-webkit-input-placeholder {
+  font-family: "Spartan", sans-serif;
+}
+
+.booking__form .MuiInputBase-input,
+.booking__form .MuiInputBase-input:-ms-input-placeholder {
+  font-family: "Spartan", sans-serif;
+}
+
+.booking__form .MuiInputBase-input,
+.booking__form .MuiInputBase-input::-ms-input-placeholder {
+  font-family: "Spartan", sans-serif;
+}
+
+.booking__form .MuiInputBase-input,
+.booking__form .MuiInputBase-input::placeholder {
+  font-family: "Spartan", sans-serif;
+}
+
+.booking__form button {
+  cursor: pointer;
+  padding: 24px 48px;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2rem;
+  background-color: #111111;
+  color: white;
+  text-transform: uppercase;
+  border: 0;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-transition: background-color 350ms;
+  transition: background-color 350ms;
+}
+
+.booking__form button:hover {
+  background-color: transparent;
+  border: 1px solid #111111;
+  color: #111111;
+}
+
+.booking__form .nbr-people .MuiInputBase-input {
+  text-align: center;
+}
+/*# sourceMappingURL=Booking.css.map */

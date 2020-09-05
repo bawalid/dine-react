@@ -1,0 +1,44 @@
+.reservation {
+  padding: 88px 165px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url("../images/homepage/ready-bg-desktop@2x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .reservation {
+    padding: 63px 65px;
+    background-image: url("../images/homepage/ready-bg-tablet@2x.jpg");
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .reservation h2 {
+    margin-bottom: 38px;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .reservation {
+    padding: 80px 24px;
+    background-image: url("../images/homepage/ready-bg-mobile@2x.jpg");
+  }
+  .reservation h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+/*# sourceMappingURL=Reservation.css.map */
